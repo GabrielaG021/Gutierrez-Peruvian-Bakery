@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peruvian Bakery</title>
+    <style>
+      body {
+        background-color: #6b351e;
+      }
+
+      h1 {
+        color: #b2704e;
+        font-family: monospace;
+        font-weight: bolder;
+        text-align: center;
+        margin: 15px auto;
+      }
+
+      h2 {
+        color: #e3b587;
+        font-family: monospace;
+        font-weight: lighter;
+        font-size: large;
+        text-align: center;
+      }
+
+      .main-picture {
+        display: block;
+        margin: 30px auto;
+        border: 2px solid #fff;
+        box-shadow: 10px 10px 5px #ccc;
+      }
+
+      p {
+        text-align: center;
+        font-size: 15px;
+      }
+
+      h4 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: larger;
+      }
+      .underline {
+        font-size: medium;
+      }
+
+      ol {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        list-style: none;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: white;
+        color: #854836;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: #854836 solid 1.8px;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 2;
+        cursor: pointer;
+        color: #e1d5d2;
+      }
+
+      .contact-info {
+        text-align: center;
+        line-height: 2;
+      }
+      .container {
+        background-color: #fcf9f4;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <strong> GUTIERREZ PERUVIAN BAKERY </strong>
+      </h1>
+      <h2>
+        <em> Where everything is made with sweetness! </em>
+      </h2>
+      <img
+        src="https://eatingtheworld.files.wordpress.com/2016/07/pdcbread.jpg"
+        class="main-picture"
+        alt="Bakery Main Image"
+        width="300"
+      />
+      <p>
+        Welcome to <strong> Gutierrez Bakery</strong>! We've been serving our
+        customers like family members since the year 2000 with an amazing
+        variety of homemade breads. Smelling the aroma of freshly
+        out-of-the-oven breads and been served to you, making many mouths
+        watery.
+      </p>
+      <h4>
+        BREAD LE CARTE <br />
+        <em class="underline">(Only one type of bread per order)</em>
+      </h4>
+      <ol>
+        <li><strong>(1)</strong>Pan Frances | <em>"French Bread"</em></li>
+        <li><strong>(2)</strong>Pan Chapla | <em>"Chapla Bread"</em></li>
+        <li><strong>(3)</strong>Chancay | <em>"Peruvian Sweet Bread"</em></li>
+        <li><strong>(4)</strong>Cachanga | <em>"Fried Bread"</em></li>
+        <li><strong>(5)</strong>Pan Chuta | <em>"Sweet Anise Bread"</em></li>
+        <li><strong>(6)</strong>Pan de Maiz | <em>"Corn Bread"</em></li>
+      </ol>
+      <button class="order-button">Order 🥖 Now</button><br />
+      <p class="contact-info">
+        Email: gabystephane@hotmail.com | Phone: (305) 449-8445 | Instagram:
+        <a href=" "> _gabby.g_</a>
+        <br />
+        CODED BY: GABRIELA GUTIERREZ
+      </p>
+    </div>
+    <script>
+      function order() {
+        let name = prompt("What is your full name?");
+        let email = prompt("What is your email address?");
+        let breadType = prompt(
+          "What is the type of bread you would like to order (Pick a number)"
+        );
+
+        if (breadType == 1) {
+          let bread1 = "Pan Frances";
+          alert(
+            "Hello, " +
+              name +
+              "! Thank you for ordering " +
+              bread1 +
+              "☺️. We will be in touch soon by email when your order is ready!"
+          );
+        } else if (breadType == 2) {
+          let bread2 = "Pan Chapla";
+          alert(
+            "Hello, " +
+              name +
+              "! Thank you for ordering " +
+              bread2 +
+              "☺️. We will be in touch soon by email when your order is ready!"
+          );
+        } else if (breadType == 3) {
+          let bread3 = "Chancay";
+          alert(
+            "Hello, " +
+              name +
+              "! Thank you for ordering " +
+              bread3 +
+              "☺️. We will be in touch soon by email when your order is ready!"
+          );
+        } else if (breadType == 4) {
+          let bread4 = "Cachanga";
+          alert(
+            "Hello, " +
+              name +
+              "! Thank you for ordering " +
+              bread4 +
+              "☺️. We will be in touch soon by email when your order is ready!"
+          );
+        } else if (breadType == 5) {
+          let bread5 = "Pan Chuta";
+          alert(
+            "Hello, " +
+              name +
+              "! Thank you for ordering " +
+              bread5 +
+              "☺️. We will be in touch soon by email when your order is ready!"
+          );
+        } else if (breadType == 6) {
+          let bread6 = "Pan de Maiz";
+          alert(
+            "Hello, " +
+              name +
+              "! Thank you for ordering " +
+              bread6 +
+              "☺️. We will be in touch soon by email when your order is ready!"
+          );
+        } else {
+          alert("This is not available! Please, try again.");
+        }
+      }
+
+      let ordernowButton = document.querySelector(".order-button");
+      ordernowButton.addEventListener("click", order);
+    </script>
+  </body>
+</html>
